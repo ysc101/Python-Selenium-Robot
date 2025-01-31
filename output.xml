@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2025-01-31T12:29:54.240418" rpa="false" schemaversion="5">
+<suite id="s1" name="DemoQA Practice" source="C:\Users\Yogesh.c\Selenium-Python-Robot\Tests\DemoQA_Practice.robot">
+<test id="s1-t1" name="Test Login Functionality" line="39">
+<kw name="Login Functionality">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-31T12:29:54.620779" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-01-31T12:29:54.985333" level="WARN">The chromedriver version (131.0.6778.87) detected in PATH at C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-31T12:29:54.620779" elapsed="2.237227"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-31T12:29:56.858006" elapsed="0.033737"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T12:29:56.892752" level="INFO">Typing text 'visual_user' into text field 'xpath://*[@id='user-name']'.</msg>
+<arg>${Username}</arg>
+<arg>${Username_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T12:29:56.891743" elapsed="0.175683"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T12:29:57.068424" level="INFO">Typing text 'secret_sauce' into text field 'xpath://*[@id='password']'.</msg>
+<arg>${Password}</arg>
+<arg>${Password_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T12:29:57.068424" elapsed="0.101983"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T12:29:57.171425" level="INFO">Clicking element 'xpath://*[@class='submit-button btn_action']'.</msg>
+<arg>${Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T12:29:57.170407" elapsed="0.099104"/>
+</kw>
+<doc>Opens the browser and maximizes the window</doc>
+<status status="PASS" start="2025-01-31T12:29:54.619953" elapsed="2.649558"/>
+</kw>
+<doc>Verify the site opens successfully</doc>
+<status status="PASS" start="2025-01-31T12:29:54.618781" elapsed="2.651731"/>
+</test>
+<test id="s1-t2" name="Test Product Sorting" line="42">
+<kw name="Product Sorting">
+<msg time="2025-01-31T12:29:57.271509" level="FAIL">User keyword cannot be empty.</msg>
+<status status="FAIL" start="2025-01-31T12:29:57.271509" elapsed="0.000996">User keyword cannot be empty.</status>
+</kw>
+<doc>Verify the product sorting done successfully</doc>
+<status status="FAIL" start="2025-01-31T12:29:57.270512" elapsed="0.001993">User keyword cannot be empty.</status>
+</test>
+<status status="FAIL" start="2025-01-31T12:29:54.241422" elapsed="3.032083"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="DemoQA Practice">DemoQA Practice</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-31T12:29:54.237396" level="ERROR">Error in file 'C:\Users\Yogesh.c\Selenium-Python-Robot\Tests\DemoQA_Practice.robot' on line 29: Creating keyword 'Wait Until Element Is Visible' failed: Keyword with same name defined multiple times.</msg>
+<msg time="2025-01-31T12:29:54.616780" level="ERROR">Error in file 'C:\Users\Yogesh.c\Selenium-Python-Robot\Tests\DemoQA_Practice.robot' on line 3: Importing library 'WebDriverManager' failed: ModuleNotFoundError: No module named 'WebDriverManager'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Yogesh.c\JANUARY-New\.venv\Scripts\robot.exe
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312
+  C:\Users\Yogesh.c\JANUARY-New\.venv
+  C:\Users\Yogesh.c\JANUARY-New\.venv\Lib\site-packages</msg>
+<msg time="2025-01-31T12:29:54.985333" level="WARN">The chromedriver version (131.0.6778.87) detected in PATH at C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.112); currently, chromedriver 132.0.6834.159 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
