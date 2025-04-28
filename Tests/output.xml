@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2025-04-28T14:48:13.004588" rpa="false" schemaversion="5">
+<suite id="s1" name="SNA LPRS" source="C:\Users\Yogesh.c\Selenium-Python-Robot\Tests\SNA_LPRS.robot">
+<test id="s1-t1" name="Test URL opens" line="27">
+<kw name="Open URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-28T14:48:13.360820" level="INFO">Opening browser 'chrome' to base url 'https://uatsna.mhlprs.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-28T14:48:13.360820" elapsed="2.392374"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-28T14:48:15.753194" elapsed="0.045552"/>
+</kw>
+<doc>Opens the browser and maximizes the window</doc>
+<status status="PASS" start="2025-04-28T14:48:13.360820" elapsed="2.437926"/>
+</kw>
+<status status="PASS" start="2025-04-28T14:48:13.360820" elapsed="2.437926"/>
+</test>
+<test id="s1-t2" name="Login" line="29">
+<kw name="Login to System">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-28T14:48:15.803935" level="INFO">Typing text 'RDDCHECKER1' into text field 'xpath://*[@id="txtUser"]'.</msg>
+<arg>${Username}</arg>
+<arg>${Username_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-28T14:48:15.803935" elapsed="0.261933"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-28T14:48:16.066903" level="INFO">Typing text 'Pass@123' into text field 'xpath://*[@id="txtPass"]'.</msg>
+<arg>${Password}</arg>
+<arg>${Password_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-28T14:48:16.066903" elapsed="0.081175"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-28T14:48:16.150425" level="INFO">Clicking element 'xpath://*[@id="btnLogin"]'.</msg>
+<arg>${Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-28T14:48:16.148078" elapsed="0.053982"/>
+</kw>
+<status status="PASS" start="2025-04-28T14:48:15.800788" elapsed="0.401272"/>
+</kw>
+<status status="PASS" start="2025-04-28T14:48:15.800788" elapsed="0.401272"/>
+</test>
+<status status="PASS" start="2025-04-28T14:48:13.004588" elapsed="3.197472"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="SNA LPRS">SNA LPRS</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-28T14:48:13.355642" level="ERROR">Error in file 'C:\Users\Yogesh.c\Selenium-Python-Robot\Tests\SNA_LPRS.robot' on line 3: Importing library 'WebDriverManager' failed: ModuleNotFoundError: No module named 'WebDriverManager'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Yogesh.c\JANUARY-New\.venv\Scripts\robot.exe
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Yogesh.c\AppData\Local\Programs\Python\Python312
+  C:\Users\Yogesh.c\JANUARY-New\.venv
+  C:\Users\Yogesh.c\JANUARY-New\.venv\Lib\site-packages</msg>
+</errors>
+</robot>
